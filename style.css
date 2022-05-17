@@ -1,0 +1,77 @@
+* {
+    margin:0;
+
+padding:0;
+box-sizing: border-box;
+}
+
+body {
+    background-color:rgb(253, 134, 154) ;
+    font-family:tahoma,sans-serif;
+    color:#fff;
+}
+
+h1 {
+    background-color: red;
+    width:20rem;
+    color: #fff;
+    border:2px solid black;
+    border-radius: 2rem;
+    text-align: center;
+    padding: 0.2rem;
+    margin:2rem auto;
+    font-weight: normal;
+    font-size: 1.5rem;
+
+}
+
+.header {
+    color:white;
+    background-color: rgb(89, 205, 50);
+    margin: 1.3rem .5rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.navbar {
+    background-color: rgb(56, 81, 150);
+    padding:1rem;
+    margin:.5rem;
+}
+.navbar a:hover {
+    background-color: rgb(155, 168, 192);
+    color:black;
+
+} 
+a {
+    color: white;
+    font-size: inherit;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: .5rem ;
+    gap: 1rem 0;
+}
+.col {
+    width:50%;
+    text-align: center;
+    padding:.5rem
+}
+.fs {
+    background-color: rgb(98, 129, 186);
+}
+.aws  {
+    background-color: rgb(112, 140, 193);
+}
+
+.ds {
+    
+    background-color: rgb(136, 154, 187);
+}
+.cms {
+    
+    background-color: rgb(155, 168, 192);
+}
