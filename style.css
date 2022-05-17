@@ -1,3 +1,5 @@
+@import "theme.css";
+
 * {
     margin:0;
 
@@ -6,72 +8,130 @@ box-sizing: border-box;
 }
 
 body {
-    background-color:rgb(253, 134, 154) ;
-    font-family:tahoma,sans-serif;
-    color:#fff;
+    background-color:var(--mavi-9) ;
+    font-family:var(--ff-monteserrat);
+    color:black;
 }
 
 h1 {
-    background-color: red;
+    background-color: var(--koyu-kırmızı);
     width:20rem;
-    color: #fff;
     border:2px solid black;
     border-radius: 2rem;
     text-align: center;
-    padding: 0.2rem;
+    padding: 10px;
     margin:2rem auto;
-    font-weight: normal;
-    font-size: 1.5rem;
+    font-weight: 500;
+    /* font-size: 1.5rem; */
 
 }
 
 .header {
-    color:white;
-    background-color: rgb(89, 205, 50);
-    margin: 1.3rem .5rem;
-    font-size: 1.5rem;
-    padding: 1rem;
+    background-color: var(--koyu-yeşil);
+    margin: 1.3rem 1rem;
+    font-size: 2rem;
+    padding: 20px;
+    font-weight: 500;
 }
 .navbar {
-    background-color: rgb(56, 81, 150);
-    padding:1rem;
-    margin:.5rem;
+    background-color: var(--gri-3);
+    /* padding:1rem; */
+    margin:1rem 1rem 0 1rem;
 }
 .navbar a:hover {
-    background-color: rgb(155, 168, 192);
+    background-color: var(--gri-7);
     color:black;
 
 } 
 a {
-    color: white;
+    color:white;
     font-size: inherit;
     text-decoration: none;
-    padding: 1rem 2rem;
+    padding: 15px 20px;
+    display: inline-block;
+    font-weight: 500;
     
 }
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin: .5rem ;
-    gap: 1rem 0;
+    margin:0 1rem;
+    
 }
 .col {
-    width:50%;
+    height:6.8rem;
     text-align: center;
-    padding:.5rem
+    padding: 1rem;
+    color: var(--gri-1);
+}
+.col h2 {
+    font-weight: 500;
+}
+.col p {
+font-weight: 500;
+}
+.col-1 {
+    width:35%;
+}
+.col-2 {
+    width:20%;
+}
+.col-3 {
+    width:30%;
+}
+.col-4 {
+    width:15%;
 }
 .fs {
-    background-color: rgb(98, 129, 186);
+    background-color: var(--gri-5);
 }
 .aws  {
-    background-color: rgb(112, 140, 193);
+    background-color: var(--gri-6);
 }
 
 .ds {
     
-    background-color: rgb(136, 154, 187);
+    background-color: var(--gri-7);
 }
 .cms {
+    background-color: var(--gri-8);
     
-    background-color: rgb(155, 168, 192);
+}
+@media (max-width:993px) {
+    body {
+        background-color: var(--açık-kırmızı);
+        color :white;
+    }
+    .col {
+        height:5rem;
+        width:50%;
+        text-align: center;
+        margin:.5rem 0 ;
+        padding: 1rem;
+        color: white;
+    }
+
+}
+@media (max-width:600px) {
+    body {
+        background-color: var(--mor-1);
+    }
+    .header {
+        display:none;
+    }
+    .navbar {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar a {
+        width:100%;
+        text-align: center;
+    }
+    .col   {
+        width:100%;
+    }
+    h1 {
+        background-color: var(--koyu-kırmızı);
+    }
 }
