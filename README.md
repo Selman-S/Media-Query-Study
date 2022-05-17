@@ -1,3 +1,3 @@
-# media
+# Media Query
 
-[Clic Me!](https://selman-s.github.io/media/)
+[Clic Me!](https://selman-s.github.io/Media-Query-Study/)
